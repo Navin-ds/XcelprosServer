@@ -1,0 +1,51 @@
+
+
+GET http://localhost:3000/users/
+###
+
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+    {
+        
+      "username":"Naveen@1422",
+      "name":"Naveen",
+       "email":"navingmail.com",
+      "password":"navin123",
+      "company":"amazon",
+     "about":"Good At communication",
+    }
+###
+
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+
+    {
+         "username":"Naveen@1422",
+            "password":"navin123"
+  }
+###
+PUT http://localhost:3000/update/:1/
+Content-Type: application/json
+ 
+  {
+      "id":0,
+      "username":"anivi125",
+      "name":"anivi",
+      "email":"anivigmail.com",
+      "password":"anivi1232",
+      "company":"zomato",
+      "about":"good  at skill"
+  }
+  
+###
+
+
+
+
+
+DELETE http://localhost:3000/delete/:0/
+Content-Type: application/json
+###
